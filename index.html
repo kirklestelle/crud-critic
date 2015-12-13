@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Webpage to write review for butter substitutes.">
+		<meta name="author" content="Kirk Lestelle">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Butter Critic</title>
+
+		<!-- Libraries: jQuery, Raty, Bootstrap.css, Parse, Font Awesome-->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raty/2.7.0/jquery.raty.min.js"></script>
+		<script src="js/jquery.raty-fa.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/latest/css/font-awesome.css" rel="stylesheet">		
+
+		<!-- Custom Files -->
+		<script src="js/critic-form.js"></script>
+		<link href="css/main.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 id="page-title">BUTTER SUBSTITUTE REVIEW</h1>
+				<img alt="Fabio Butter" src="img/fabio.jpeg" id="fabio"> 
+				<h3 id="butter">I Can't Believe It's Not Butter!</h3>
+				<h6>RATING:<span id="ratingAverage"></span></h6>
+			</div>
+		</header>
+		<form id="formReview">
+			<div class="container">
+				<h1>Review Your Butter Substitute</h1>
+				<div id="reviewRating"></div>
+				<div class="form-group">
+					<label for="title"></label>
+					<input class="form-control" id="reviewTitle" placeholder="Review Title">
+				</div>
+				<div class="form-group">
+					<label for="review"></label>
+					<textarea class="form-control" id="reviewBody" placeholder="Write your review..." height: "100px"></textarea>
+				</div>
+				<button class="btn btn-primary" type="submit">SUBMIT REVIEW</button>
+			</div>
+		</form>
+		<div class="container">
+			<center><h2>PREVIOUS REVIEWS</h2></center>
+			<ol id="reviews">
+			</ol>
+		</div>
+
+	</body>
+</html>
